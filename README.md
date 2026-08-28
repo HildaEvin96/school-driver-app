@@ -1,50 +1,163 @@
-# Welcome to your Expo app 👋
+#  School Driver App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application designed for school bus drivers to manage daily student pickup and drop-off trips efficiently.
 
-## Get started
+The application allows drivers to select routes, manage student pickup/drop-off status, track trip delays, view trip history, and securely log in using Firebase Phone OTP Authentication.
 
-1. Install dependencies
+##  Features
 
-   ```bash
-   npm install
-   ```
+-  Driver Login using Firebase Phone OTP Authentication
+-  Driver Profile Management
+-  Route Selection
+-  Student Pickup Management
+-  Student Drop-off Management
+-  Mark students as Picked Up / Dropped Off
+-  Mark students as Absent
+-  Location-wise Student Grouping
+-  Open Pickup and Drop-off Locations in Maps
+-  Add Trip Delay
+-  End Trip with Confirmation
+-  Trip History
+-  Light & Dark Mode Support
+-  Offline Local Storage using SQLite
+-  REST API Data Synchronization
 
-2. Start the app
+##  Technologies Used
 
-   ```bash
-   npx expo start
-   ```
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- Firebase Authentication
+- Firebase Firestore
+- Zustand
+- SQLite
+- REST API
 
-In the output, you'll find options to open the app in a
+## 🏗️ Project Architecture
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+The project follows a structured architecture to separate UI, business logic, data access, and state management.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+school-driver-app/
+│
+├── api/             # REST API services
+├── app/             # Application screens and navigation
+├── components/      # Reusable UI components
+├── config/          # Application configuration
+├── context/         # Authentication and theme context
+├── database/        # SQLite database and migrations
+├── repository/      # Data repository layer
+├── store/           # Zustand state management
+├── types/           # TypeScript models/types
+└── usecases/        # Application business logic
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+##  Main Screens
 
-## Learn more
+- Login
+- OTP Verification
+- Driver Signup
+- Home
+- Current Trip
+- Pickup
+- Drop-off
+- Student Details
+- Trip History
+- Settings
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🔄 Application Flow
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```text
+Driver Login
+     ↓
+OTP Verification
+     ↓
+Driver Authentication
+     ↓
+Home
+     ↓
+Select Route
+     ↓
+Pickup / Drop-off Trip
+     ↓
+Update Student Status
+     ↓
+End Trip
+     ↓
+Trip History
+```
 
-## Join the community
+##  Data Flow
 
-Join our community of developers creating universal apps.
+The application uses REST APIs, SQLite, and Zustand for managing application data.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```text
+REST API
+   ↓
+Repository
+   ↓
+SQLite Database
+   ↓
+Zustand Store
+   ↓
+React Native UI
+```
+
+SQLite provides local data storage, while Zustand manages the application's UI state.
+
+## 🔐 Authentication
+
+Firebase Phone Authentication is used for secure driver authentication.
+
+```text
+Phone Number
+     ↓
+OTP Verification
+     ↓
+Firebase Authentication
+     ↓
+Driver Profile
+     ↓
+Application
+```
+
+Firebase Firestore is used to store and retrieve driver profile information.
+
+##  Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/HildaEvin96/school-driver-app.git
+```
+
+Navigate to the project:
+
+```bash
+cd school-driver-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the application:
+
+```bash
+npx expo start
+```
+
+For an Android development build:
+
+```bash
+npx expo run:android
+```
+
+## 👩 Author
+
+**Hilda Cleetus**
+
+Software Engineer | Android & React Native Developer
