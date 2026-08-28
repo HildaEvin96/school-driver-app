@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626365856515",
+    "project_id": "school-driver-app-a7c7f",
+    "storage_bucket": "school-driver-app-a7c7f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626365856515:android:9ee4810e273d1756734736",
+        "android_client_info": {
+          "package_name": "com.hilda.schooldriverapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFelBigH57IFQyOBg0HL6UkFN-xJ2ba5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

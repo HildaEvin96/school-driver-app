@@ -1,0 +1,12 @@
+export type UserRole =
+  | "driver"
+  | "parent"
+  | "admin";
+
+export type AppUser = {
+  uid: string;
+  name: string;
+  phone: string;
+  role: UserRole;
+  active: boolean;
+};
