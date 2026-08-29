@@ -836,7 +836,7 @@ const handleLogout = () => {
             >
               <Ionicons
                 name="people-outline"
-                size={29}
+                size={24}
                 color="#FFFFFF"
               />
             </View>
@@ -1822,17 +1822,20 @@ profileButton: {
   },
 
   actionContainer: {
-    gap: 13,
+    flexDirection: "row",
+    gap: 12,
   },
 
   actionButton: {
-    minHeight: 88,
-    borderRadius: 20,
-    paddingHorizontal: 16,
-    flexDirection: "row",
-    alignItems: "center",
-    elevation: 2,
-  },
+  flex: 1,
+  minHeight: 90,
+  borderRadius: 18,
+  paddingHorizontal: 10,
+  paddingVertical: 12,
+  flexDirection: "row",
+  alignItems: "center",
+  elevation: 2,
+},
 
   pickupButton: {
     backgroundColor: "#079A96",
@@ -1846,16 +1849,15 @@ profileButton: {
     opacity: 0.55,
   },
 
-  actionIconContainer: {
-    width: 51,
-    height: 51,
-    borderRadius: 16,
-    backgroundColor:
-      "rgba(255,255,255,0.12)",
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 13,
-  },
+actionIconContainer: {
+  width: 42,
+  height: 42,
+  borderRadius: 13,
+  backgroundColor: "rgba(255,255,255,0.12)",
+  alignItems: "center",
+  justifyContent: "center",
+  marginRight: 8,
+},
 
   actionIcon: {
     fontSize: 27,
@@ -1865,23 +1867,23 @@ profileButton: {
     flex: 1,
   },
 
-  actionTitle: {
-    color: "#FFFFFF",
-    fontSize: 18,
-    fontWeight: "900",
-  },
+actionTitle: {
+  color: "#FFFFFF",
+  fontSize: 15,
+  fontWeight: "900",
+},
 
-  actionDescription: {
-    color: "#E5E7E2",
-    fontSize: 10,
-    marginTop: 4,
-  },
+actionDescription: {
+  color: "#E5E7E2",
+  fontSize: 9,
+  marginTop: 3,
+},
 
-  actionArrow: {
-    color: "#FFFFFF",
-    fontSize: 27,
-    marginLeft: 8,
-  },
+actionArrow: {
+  color: "#FFFFFF",
+  fontSize: 20,
+  marginLeft: 4,
+},
 
   // =========================
   // Drop-off Student Selection

@@ -66,7 +66,21 @@ school-driver-app/
 - Trip History
 - Settings
 
-## 🔄 Application Flow
+##  App Screenshots
+
+### Home
+<img src="screenshots/home.png" width="250" alt="Home Screen">
+
+### Pickup
+<img src="screenshots/pickup.png" width="250" alt="Pickup Screen">
+
+### Drop-off
+<img src="screenshots/dropoff.png" width="250" alt="Drop-off Screen">
+
+### Trip History
+<img src="screenshots/trip-history.png" width="250" alt="Trip History Screen">
+
+##  Application Flow
 
 ```text
 Driver Login
@@ -106,7 +120,7 @@ React Native UI
 
 SQLite provides local data storage, while Zustand manages the application's UI state.
 
-## 🔐 Authentication
+##  Authentication
 
 Firebase Phone Authentication is used for secure driver authentication.
 
